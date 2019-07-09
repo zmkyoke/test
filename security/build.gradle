@@ -1,0 +1,13 @@
+// 安全模块
+jar {
+    baseName = 'proper-phip-service-security'
+}
+
+dependencies {
+    compile project(':core')
+    compile project(':sys')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

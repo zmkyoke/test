@@ -1,0 +1,12 @@
+// 基础信息模块
+jar {
+    baseName = 'licx-platform-service-sys'
+}
+
+dependencies {
+    compile project(':core')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

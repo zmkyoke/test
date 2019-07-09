@@ -1,0 +1,11 @@
+// 核心模块
+jar {
+    baseName = 'proper-phip-service-core'
+}
+
+dependencies {
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

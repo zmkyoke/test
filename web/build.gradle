@@ -1,0 +1,22 @@
+// web工程模块
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    baseName = 'proper-phip-service-web'
+    version = ''
+}
+
+bootWar {
+    baseName = 'web'
+    version = ''
+}
+
+dependencies {
+    compile project(':security')
+    compile project(':sys')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

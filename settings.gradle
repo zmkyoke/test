@@ -1,0 +1,6 @@
+rootProject.name = 'proper-phip-service'
+
+include 'core'
+include 'security'
+include 'sys'
+include 'web'
